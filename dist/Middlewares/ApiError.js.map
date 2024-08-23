@@ -1,0 +1,1 @@
+{"version":3,"file":"ApiError.js","sourceRoot":"","sources":["../../src/Middlewares/ApiError.ts"],"names":[],"mappings":";;;AAAA,MAAM,QAAS,SAAQ,KAAK;IAIxB,YAAY,UAAU,EAAE,OAAO,GAAG,sBAAsB;QACpD,KAAK,CAAC,OAAO,CAAC,CAAC;QACf,IAAI,CAAC,UAAU,GAAG,UAAU,CAAC;QAC7B,IAAI,CAAC,IAAI,GAAG,UAAU,CAAC;IAC3B,CAAC;CACJ;AAEQ,4BAAQ"}
