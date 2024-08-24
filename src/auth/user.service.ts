@@ -54,6 +54,8 @@ export class UserService {
     res.cookie('jwt', token, {
       httpOnly: true,
       secure: true,
+      sameSite: 'none',
+      path: '/',
       maxAge: 3600000*24
     })
 
