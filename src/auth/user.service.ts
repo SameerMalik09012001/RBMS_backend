@@ -52,8 +52,8 @@ export class UserService {
 
     // Set JWT as a cookie
     res.cookie('jwt', token, {
-      // httpOnly: true,
-      // secure: true,
+      httpOnly: true,
+      secure: true,
       maxAge: 3600000*24
     })
 
