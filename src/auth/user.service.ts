@@ -53,9 +53,6 @@ export class UserService {
     // Set JWT as a cookie
     res.cookie('jwt', token, {
       httpOnly: true,
-      secure: true,
-      sameSite: 'none',
-      path: '/',
       maxAge: 3600000 * 24
     })
 
@@ -66,8 +63,6 @@ export class UserService {
     res.clearCookie('jwt', {
       httpOnly: true,
       secure: true,
-      sameSite: 'none',
-      path: '/'
     });
     return res.json({ msg: 'Logout successful' });
   }
