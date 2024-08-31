@@ -7,11 +7,14 @@ import { JwtModule } from '@nestjs/jwt';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
-  ConfigModule.forRoot({
-    isGlobal: true,
-    envFilePath: '.env'
-  }),
+  imports: [
+    MongooseModule.forFeature([
+      { name: User.name, schema: UserSchema }
+    ]),
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env'
+    }),
     JwtModule.register({
       secret: process.env.JWT_SECRET,
     }),

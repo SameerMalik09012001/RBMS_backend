@@ -48,7 +48,7 @@ export class UserThingsService {
                     { id: { $regex: keyword, $options: 'i' } },
                     { lastName: { $regex: keyword, $options: 'i' } },
                     { contactNo: { $regex: keyword, $options: 'i' } },
-                    { gender: keyword },
+                    { gender: keyword[0].toUpperCase()+keyword.substring(1).toLowerCase() },
                     { role: { $regex: keyword, $options: 'i' } },
                 ],
             }
@@ -197,7 +197,7 @@ export class UserThingsService {
                     { id: { $regex: keyword, $options: 'i' } },
                     { lastName: { $regex: keyword, $options: 'i' } },
                     { contactNo: { $regex: keyword, $options: 'i' } },
-                    { gender: keyword },
+                    { gender: keyword[0].toUpperCase()+keyword.substring(1).toLowerCase() },
                     { role: { $regex: keyword, $options: 'i' } },
                 ]
             }).exec();
@@ -209,7 +209,7 @@ export class UserThingsService {
                         { id: { $regex: keyword, $options: 'i' } },
                         { lastName: { $regex: keyword, $options: 'i' } },
                         { contactNo: { $regex: keyword, $options: 'i' } },
-                        { gender: keyword },
+                        { gender: keyword[0].toUpperCase()+keyword.substring(1).toLowerCase() },
                         { role: { $regex: keyword, $options: 'i' } },
                     ]
                 })

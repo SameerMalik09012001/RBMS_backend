@@ -51,12 +51,12 @@ let UserService = class UserService {
         const payload = { email: user.email, role: user.role, _id: user._id };
         const token = this.jwtService.sign(payload);
         res.cookie('jwt', token, {
-            maxAge: 3600000 * 24
+            maxAge: 3600000 * 24,
         });
         return res.json({ user, msg: 'Login successful' });
     }
     logout(res) {
-        res.clearCookie('jwt');
+        res.clearCookie('jwt', {});
         return res.json({ msg: 'Logout successful' });
     }
 };
