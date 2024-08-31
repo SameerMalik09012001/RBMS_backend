@@ -34,7 +34,14 @@ $ npm install
 
 ## Paste your MongoDB URI
 
-Create mongodb cluster and get the URI of mongodb cluster and paste that in .env file.
+Create mongodb cluster and get the URI of mongodb cluster and paste that in .env file. your env file will look like this. Just update the dn_name adn jwt_secret in it.
+
+
+```bash
+MONGO_URI = mongo uri
+DB_NAME = db name
+JWT_SECRET = secrest key
+```
 
 ## Before Run
 
