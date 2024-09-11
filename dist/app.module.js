@@ -20,6 +20,9 @@ let AppModule = class AppModule {
     configure(consumer) {
         consumer.apply(middleware_1.Middleware)
             .forRoutes({
+            path: 'user/login',
+            method: common_1.RequestMethod.GET
+        }, {
             path: 'user-things/getAllUser/:page/:limit',
             method: common_1.RequestMethod.GET
         }, {

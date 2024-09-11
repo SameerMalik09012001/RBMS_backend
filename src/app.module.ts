@@ -38,6 +38,10 @@ export class AppModule implements NestModule {
     consumer.apply(Middleware)
       .forRoutes(
         {
+          path: 'user/login',
+          method: RequestMethod.GET
+        },
+        {
           path: 'user-things/getAllUser/:page/:limit',
           method: RequestMethod.GET
         },
