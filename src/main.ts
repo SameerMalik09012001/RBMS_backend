@@ -8,7 +8,7 @@ async function bootstrap() {
   app.use(cookieParser());
 
   app.enableCors({
-    origin: 'https://rbms-frontend-6uzv.vercel.app',
+    origin: 'https://rbms-frontend.vercel.app',
     // origin: 'http://localhost:3000',
     methods: 'GET,POST,DELETE,PUT',
     allowedHeaders: 'Content-Type, Authorization',
