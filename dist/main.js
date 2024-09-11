@@ -7,8 +7,8 @@ async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.use(cookieParser());
     app.enableCors({
-        origin: 'https://rbms-frontend.vercel.app',
-        methods: 'GET,POST,DELETE,PUT',
+        origin: 'http://localhost:3000',
+        methods: 'GET,POST,DELETE,PUT,get, post, delete, put',
         allowedHeaders: 'Content-Type, Authorization',
         credentials: true
     });
